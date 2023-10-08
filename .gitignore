@@ -39,7 +39,11 @@ wp-config.php
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
+<<<<<<< HEAD
 /wp-content/plugins
+=======
+#/wp-content/plugins
+>>>>>>> 7fa8a6d81e1a36e2dc8ef13ddc767ad66867cdb9
 
 # All themes
 #
