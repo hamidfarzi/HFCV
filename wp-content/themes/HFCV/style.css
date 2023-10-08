@@ -1,0 +1,101 @@
+/*!
+Theme Name: Hamid Farzi CV
+Theme URI: 
+Author: Hamid Farzi
+Author URI: https://www.linkedin.com/in/hamidfarzi/
+Description: Hamid Farzi's Dedicated CV Theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: hfcv
+Tags: cv,resume,personal,developer,custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/* Includes
+--------------------------------------------------- */
+/* include css owl */
+@import url("assets/css/owl.carousel.min.css");
+/* include main and global styles */
+@import url("assets/css/main.css");
+/* include fonts*/
+@import url("assets/css/fonts.css");
+/* include templates styles */
+@import url("assets/css/templates.css");
+/* include css animations */
+@import url("assets/css/animations.css");
+/* include css responsive */
+@import url("assets/css/responsive.css");
+
+/* Variables
+--------------------------------------------------- */
+
+:root {
+  /* colors */
+  --hfcv-color-primary-color: #68e0cf;
+  --hfcv-color-secondary-color: #585d65;
+  --hfcv-color-accent-color: #68e0cf;
+  --hfcv-color-text-color: #ffffff;
+  --hfcv-color-background-color: #373b40;
+  --hfcv-color-borders-color: #585d65;
+  --hfcv-color-links-color: #ffffff;
+  --hfcv-color-links-hover-color: #68e0cf;
+  --hfcv-color-links-visited-color: #eeeeee;
+
+  /* typography */
+  --hfcv-text-default-font-family: "Poppins", sans-serif;
+  --hfcv-text-default-font-size: 1vw;
+  --hfcv-text-default-font-style: normal;
+  --hfcv-text-default-font-decoration: none;
+  --hfcv-text-default-font-line-height: 1.5;
+  --hfcv-text-default-font-weight: 400;
+
+  --hfcv-text-giant-font-size: 5vw;
+  --hfcv-text-giant-font-weight: 5vw;
+  --hfcv-text-large-font-size: 4vw;
+  --hfcv-text-medium-font-size: 3vw;
+  --hfcv-text-small-font-size: 2vw;
+
+  --hfcv-text-mobile-font-scale: 2;
+
+  /* layout */
+  --hfcv-layout-default-borders-thickness: 1px;
+
+  --hfcv-layout-headings-margin-top: 0.5vw;
+  --hfcv-layout-headings-margin-bottom: 0.5vw;
+
+  --hfcv-layout-sections-margin-top: 1vw;
+  --hfcv-layout-sections-margin-bottom: 1vw;
+
+  --hfcv-layout-header-height: 3vw;
+  --hfcv-layout-header-margin: 3vw 3vw 3vw 3vw;
+  --hfcv-layout-header-padding: 1vw 1vw 1vw 1vw;
+  --hfcv-layout-logo-height: 3vw;
+  --hfcv-layout-logo-width: 3vw;
+
+  --hfcv-layout-side-image-width: 40vw;
+  --hfcv-layout-side-menu-width: 6vw;
+  --hfcv-layout-main-content-container-padding: 2vw 2vw 2vw 2vw;
+  --hfcv-layout-main-content-container-margin-top: 8vw;
+
+  --hfcv-layout-loop-items-gap: 0.5vw;
+  --hfcv-layout-loop-icon-size: 4vw;
+  --hfcv-layout-loop-image-height: 15vw;
+
+  --hfcv-layout-inputs-padding: 1vw 1vw 1vw 1vw;
+
+  --hfcv-layout-footer-margin-top: 5vw;
+  --hfcv-layout-footer-margin-bottom: 5vw;
+
+  --hfcv-layout-mobile-top-image-height: 30vw;
+
+  --hfcv-layout-post-gallery-height: 30vw;
+
+  /* animations */
+  --hfcv-animations-typing-effect-speed: 1s;
+  --hfcv-animations-buttons-effect-speed: 0.15s;
+  --hfcv-animations-inputs-border-effect-speed: 0.3s;
+  --hfcv-animations-inputs-links-color-effect-speed: 0.2s;
+  --hfcv-animations-inputs-links-glow-effect-speed: 2s;
+}

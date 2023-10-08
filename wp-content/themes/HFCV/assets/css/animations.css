@@ -1,0 +1,87 @@
+/*
+*
+*   hfcv css animations
+*
+*/
+
+/* Typing
+--------------------------------------------------- */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing .typing-line {
+  animation: typing var(--hfcv-animations-typing-effect-speed) steps(10),
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  display: inline-block;
+}
+
+/* Buttons / Submits
+--------------------------------------------------- */
+
+button,
+input[type="submit"] {
+  transition: all var(--hfcv-animations-buttons-effect-speed) ease-in;
+}
+
+/* Inputs
+--------------------------------------------------- */
+
+textarea,
+input {
+  transition: border var(--hfcv-animations-inputs-border-effect-speed)
+    cubic-bezier(0.01, 1, 0.87, -1.42);
+}
+
+/* a 
+--------------------------------------------------- */
+
+.main-container a {
+  transition: color var(--hfcv-animations-inputs-links-color-effect-speed)
+    ease-in-out;
+}
+
+.main-container a:hover {
+  animation: glowingText var(--hfcv-animations-inputs-links-glow-effect-speed)
+    infinite;
+}
+
+.menu-thumbnail:hover object {
+  animation: glowingIcon var(--hfcv-animations-inputs-links-glow-effect-speed)
+    infinite;
+}
+
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 0.5vw var(--hfcv-color-links-hover-color);
+  }
+  50% {
+    text-shadow: 0 0 1vw var(--hfcv-color-links-hover-color);
+  }
+  100% {
+    text-shadow: 0 0 0.5vw var(--hfcv-color-links-hover-color);
+  }
+}
+
+@keyframes glowingIcon {
+  0% {
+    filter: drop-shadow(0 0 0.5vw var(--hfcv-color-links-hover-color));
+  }
+  50% {
+    filter: drop-shadow(0 0 1vw var(--hfcv-color-links-hover-color));
+  }
+  100% {
+    filter: drop-shadow(0 0 0.5vw var(--hfcv-color-links-hover-color));
+  }
+}
