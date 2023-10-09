@@ -32,18 +32,22 @@ $experience_clients = wp_get_post_terms($post->ID, 'client');
             ?>
         </ul>
     </section>
-    <section class="skills">
+    <section data-columns="5" style="--data-columns:5" class="skills carousel owl-carousel owl-loaded owl-drag">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
         <?php
         foreach ($experience_skills as $skill) {
             get_template_part('template-parts/content', 'loop-term', [
                 'tax' => 'skill',
-                'type' => 'list',
+                'type' => 'carousel',
                 'term' => $skill->slug,
                 'level' => "true",
                 'description' => false
             ]);
         }
         ?>
+        </div>
+        </div>
     </section>
     <article>
         <?php the_content(); ?>
